@@ -1,0 +1,74 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint-config-airbnb-base",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "no-const-assign": "warn",
+    "no-this-before-super": "warn",
+    "no-undef": "warn",
+    "no-unreachable": "warn",
+    "no-unused-vars": "warn",
+    "constructor-super": "warn",
+    "valid-typeof": "warn",
+    "strict": 0,
+    "experimentalDecorators": 0,
+    "no-console": 0,
+    "no-undefine": 0,
+    "object-curly-spacing": [ "error", "always" ],
+    "space-before-blocks": ["error", "never"],
+    "comma-dangle": ["error", "never"],
+    "arrow-parens": ["error", "as-needed"],
+    "max-len": [
+      "error",
+      { 
+        "code": 120,
+        "tabWidth": 2,
+        "ignoreComments": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "ignoreStrings": true,
+        "ignoreRegExpLiterals": true
+      }
+    ],
+    "camelcase": "off",
+    "react/prop-types": "off",
+    "no-new": 0,
+    "quotes": [2, "single"],
+    "new-cap": [2, {
+      "newIsCap": true,
+      "capIsNew": false
+    }],
+    "class-methods-use-this": "off",
+    "import/extensions": 0,
+    "semi-style": ["error", "last"],
+    "linebreak-style": 0,
+    "operator-linebreak": [
+      2,
+      "before",
+      {
+        "overrides": {
+          "+=": "none",
+          "&&": "after"
+        }
+      }
+    ]
+  }
+}
